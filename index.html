@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>LENOVI</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="common/css/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="common/font/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="common/css/layout.css">
+<link rel="stylesheet" type="text/css" href="common/css/class.css">
+<link rel="stylesheet" type="text/css" href="common/css/style.css">
+
+<script type="text/javascript" src="common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+<header class="header">
+	<h1 class="logo">
+		<a href="#"><img src="common/img/logo.png" alt=""></a>
+		<small>『ビットコイン』から『ボーディングスクール』まで新しい時代の富裕層メディア</small>
+	</h1>
+
+	<nav class="topNav">
+		<div class="navTabs">
+			<ul class="inner">
+				<li><a href="index.html">ＴＯＰ</a></li>
+				<li class="navTab no1"><a href="#">ビジネス</a></li>
+				<li class="navTab no2"><a href="#">投資・マネー</a></li>
+				<li class="navTab no3"><a href="#">ライフスタイル</a></li>
+				<li class="navTab no4"><a href="#">エンタメ</a></li>
+				<li class="navTab no5"><a href="#">Woman</a></li>
+				<li><a href="#">ライター</a></li>
+			</ul><!--/.inner-->
+		</div>
+		
+		<div class="navMenus">
+			<div class="navMenu no1"><!--ビジネス-->
+				<ul>
+					<li>
+						<dl>
+							<dt>経営</dt>
+							<dd>
+								<div>
+									<p><a href="#">会社経営</a></p>
+									<p><a href="#">事務所経営</a></p>
+									<p><a href="#">病院経営</a></p>
+									<p><a href="#">B/S、P/L</a></p>
+								</div>
+								<div>
+									<p><a href="#">人事・組織</a></p>
+									<p><a href="#">マーケティング</a></p>
+									<p><a href="#">成長戦略</a></p>
+									<p><a href="#">資金調達</a></p>
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>税務会計</dt>
+							<dd>
+								<p><a href="#">個人所得税</a></p>
+								<p><a href="#">法人税</a></p>
+								<p><a href="#">会計</a></p>
+								<p><a href="#">監査</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>起業</dt>
+							<dd>
+								<p><a href="#">スタートアップ</a></p>
+								<p><a href="#">アントレプレナー</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>転職</dt>
+							<dt>セミナー・イベント</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no2"><!--投資・マネー-->
+				<ul>
+					<li>
+						<dl>
+							<dt>株式</dt>
+							<dt>債権</dt>
+							<dt>投資信託</dt>
+							<dt>クラウドファンディング</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>不動産</dt>
+							<dd>
+								<p><a href="#">国内</a></p>
+								<p><a href="#">海外</a></p>
+								<p><a href="#">パリ</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>新しい投資</dt>
+							<dd>
+								<p><a href="#">再生可能エネルギー</a></p>
+								<p><a href="#">その他事業投資</a></p>
+								<p><a href="#">動産リース型投資（当社独自商品）</a></p>
+								<p><a href="#">暗号通貨</a></p>
+								<p><a href="#">その他</a></p>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no3"><!--ライフスタイル-->
+				<ul>
+					<li>
+						<dl>
+							<dt>マイライフ</dt>
+							<dd>
+								<p><a href="#">健康</a></p>
+								<p><a href="#">アンチエイジング</a></p>
+								<p><a href="#">ダイエット</a></p>
+								<p><a href="#">体づくり</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>教育</dt>
+							<dd>
+								<p><a href="#">資格</a></p>
+								<p><a href="#">MBA</a></p>
+								<p><a href="#">外国語</a></p>
+								<p><a href="#">短期留学</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>趣味・嗜好</dt>
+							<dd>
+								<p><a href="#">車</a></p>
+								<p><a href="#">時計</a></p>
+								<p><a href="#">ファッション</a></p>
+								<p><a href="#">酒</a></p>
+								<p><a href="#">料理</a></p>
+								<p><a href="#">ビジネスグッズ</a></p>
+								<p><a href="#">ゴルフ</a></p>
+								<p><a href="#">アウトドア</a></p>
+								<p><a href="#">社会人サークル・イベント</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ファミリー</dt>
+							<dd>
+								<p><a href="#">子供の教育</a></p>
+								<p><a href="#">住居</a></p>
+								<p><a href="#">家計</a></p>
+								<p><a href="#">結婚・離婚・パートナーとの生活</a></p>
+							</dd>
+							<dt>環境・オーガニック・ビオ</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no4"><!--エンタメ-->
+				<ul>
+					<li>
+						<dl>
+							<dt>グルメ</dt>
+							<dt>旅行</dt>
+							<dt>ホテル</dt>
+							<dt>演劇</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ミュージカル</dt>
+							<dt>クラブ</dt>
+							<dt>ジャズバー</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no5"><!--Woman-->
+				<ul>
+					<li>
+						<dl>
+							<dt>キャリア・ビジネス</dt>
+							<dt>ビューティー</dt>
+							<dt>ファッション</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ヘルスケア</dt>
+							<dt>女性アンチエイジング</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div><!--/.navMenus-->
+	</nav>
+</header><!--/.header-->
+
+
+<div class="container bgGrey1 spBgN">
+	<main class="main1">
+		<div class="boxBg">
+			<div class="inner">
+				<div class="img">
+					<a href="#">
+						<img src="common/img/img1.png" width="100%" alt="">
+						<span>メルセデスが提唱するクルマの新たな価値「CASE」</span>
+					</a>
+				</div>
+
+				<ul class="list">
+					<li>
+						<a href="#">
+							<span class="img"><img src="common/img/thum1.png" width="100%" alt=""></span>
+							<span class="txt">iPhone Xは何があっても落とせない。画面修理は3万円越えだから…（AppleCare+未加入の場合）</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="img"><img src="common/img/thum1.png" width="100%" alt=""></span>
+							<span class="txt">iPhone Xは何があっても落とせない。画面修理は3万円越えだから…（AppleCare+未加入の場合）</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="img"><img src="common/img/thum1.png" width="100%" alt=""></span>
+							<span class="txt">iPhone Xは何があっても落とせない。画面修理は3万円越えだから…（AppleCare+未加入の場合）</span>
+						</a>
+					</li>
+				</ul>
+			</div><!--/.inner-->
+		</div>
+	</main>
+
+	<div class="inner clearfix colWrap">
+		<div class="colMain">
+			<ul class="list1 spInner">
+				<li class="liItem">
+					<h2 class="ttl1">見出しが入るテキスト</h2>
+					<div class="img"><img src="common/img/img2.png" width="100%" alt=""></div>
+					<p>究極に理想的なクルマ社会の実現を目指し、メルセデス・ベンツが中長期戦略に掲げる「CASE」。その取り組みの現在、過去、そして未来像を紹介する。2016年9月に行われた「パリモーターショー2016」で、メルセデス・ベンツは、パワートレインの変革を掲げた「EQ」と同時に、「CASE（ケース）」と名づけた中長</p>
+					<h3 class="ttl2">中見出しが入るテキスト</h3>
+					<p>究極に理想的なクルマ社会の実現を目指し、メルセデス・ベンツが中長期戦略に掲げる「CASE」。その取り組みの現在、過去、そして未来像を紹介する。2016年9月に行われた「パリモーターショー2016」で、メルセデス・ベンツは、パワートレインの変革を掲げた「EQ」と同時に、「CASE（ケース）」と名づけた中長</p>
+					<h4 class="ttl3">小見出しが入るテキスト</h4>
+					<div class="wakuTxt1">枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合枠がある場合</div>
+					<a class="btn type1 clr1" href="#">リンクテキストが入る</a>
+				</li>
+				<li class="liItem">
+					<h2 class="ttl1">見出しが入るテキスト</h2>
+					<div class="imgTxt clearfix">
+						<div class="img fltR"><img src="common/img/img3.png" alt=""></div>
+						<p>写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る写真を左右に振る</p>
+					</div>
+					<a class="btn type1 clr1" href="#">リンクテキストが入る</a>
+				</li>
+			</ul><!--/.list1-->
+		</div><!--/.colMain-->
+
+		<div class="colSub">
+			<section>
+				<h2 class="ttl4 spInner">アクセスランキング</h2>
+				<ul class="thumTxtList1">
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+
+			<section class="MT45 spMT0">
+				<h2 class="ttl4 spInner">新着コラム</h2>
+				<ul class="thumTxtList1">
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div><!--/.colSub-->
+	</div><!--/.inner.colWrap-->
+	
+	<div class="about">
+		<div class="inner">
+			<h2>
+				<small><img src="common/img/about_ttl.png" alt=""></small>
+				<span>レノヴィのついて</span>
+			</h2>
+			<p class="txt1">「新しいコトを始めたい」人が集まる<br>
+			エグゼクティブ向けプラットホーム</p>
+			<p class="txt2">
+				Lenovi(レノヴィ)は、専門家、新規事業者、投資家が集まる<br>
+				日本初のプラットホームです。エグゼクティブな情報交流の場と<br>
+				クラウドファンディングの運営によって、<br>
+				新規事業を持続的な成功に導くサイクルを生み出します。<br>
+				Lenovi(レノヴィ)は、専門家、新規事業者、投資家が集まる<br>
+				日本初のプラットホームです。
+			</p>
+		</div><!--/.inner-->
+	</div>
+</div><!--/.container-->
+
+
+<footer class="footer">
+	<nav class="ftNav">
+		<div class="ftLogo">
+			<div class="img"><img src="common/img/ft_logo.png" alt=""></div>
+			<p>「新しいコトを始めたい」人が集まる<br>エグゼクティブ向けプラットホーム</p>
+		</div>
+		<div class="ftMenus">
+			<dl>
+				<dt>ビジネス</dt>
+				<dd>
+					<p><a href="#">・経営</a></p>
+					<p><a href="#">・転職</a></p>
+					<p><a href="#">・起業</a></p>
+					<p><a href="#">・セミナー・イベント</a></p>
+					<p><a href="#">・税務会計</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>投資・マネー</dt>
+				<dd>
+					<p><a href="#">・株式</a></p>
+					<p><a href="#">・債権</a></p>
+					<p><a href="#">・投資信託</a></p>
+					<p><a href="#">・不動産</a></p>
+					<p><a href="#">・新しい投資</a></p>
+					<p><a href="#">・クラウドファンディング</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>ライフスタイル</dt>
+				<dd>
+					<p><a href="#">・マイライフ</a></p>
+					<p><a href="#">・教育</a></p>
+					<p><a href="#">・環境・オーガニック・ビオ</a></p>
+					<p><a href="#">・趣味・嗜好</a></p>
+					<p><a href="#">・ファミリー</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>エンタメ</dt>
+				<dd>
+					<p><a href="#">・グルメ</a></p>
+					<p><a href="#">・旅行</a></p>
+					<p><a href="#">・ホテル</a></p>
+					<p><a href="#">・演劇</a></p>
+					<p><a href="#">・ミュージカル</a></p>
+					<p><a href="#">・クラブ</a></p>
+					<p><a href="#">・ジャズバー</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>Woman</dt>
+				<dd>
+					<p><a href="#">・キャリア・ビジネス</a></p>
+					<p><a href="#">・ビューティー</a></p>
+					<p><a href="#">・ファッション</a></p>
+					<p><a href="#">・ヘルスケア</a></p>
+					<p><a href="#">・女性アンチエイジング</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>ライター</dt>
+			</dl>
+		</div>
+	</nav>
+	<p class="copyright">Copyright© LEVINO. ALL RIGHTS RESERVED</p>
+</footer><!--/.footer-->
+</div><!--/.wrapper-->
+</body>
+</html>

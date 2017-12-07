@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>記事ページ | LENOVI</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- OGs -->
+<meta property="og:url" content="http://fani.wadakoubou.com/lenovi/article.html" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="LENOVI" />
+<meta property="og:description" content="『ビットコイン』から『ボーディングスクール』まで新しい時代の富裕層メディア" />
+<meta property="og:image" content="http://fani.wadakoubou.com/lenovi/article.html/common/img/ogimg.jpg">
+<!-- /OGs -->
+
+<link rel="stylesheet" type="text/css" href="common/css/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="common/font/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="common/css/layout.css">
+<link rel="stylesheet" type="text/css" href="common/css/class.css">
+<link rel="stylesheet" type="text/css" href="common/css/style.css">
+
+<script type="text/javascript" src="common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrapper">
+<header class="header">
+	<h1 class="logo">
+		<a href="#"><img src="common/img/logo.png" alt=""></a>
+		<small>『ビットコイン』から『ボーディングスクール』まで新しい時代の富裕層メディア</small>
+	</h1>
+
+	<nav class="">
+		<div class="navTabs">
+			<ul class="inner">
+				<li><a href="index.html">ＴＯＰ</a></li>
+				<li class="navTab no1"><a href="#">ビジネス</a></li>
+				<li class="navTab no2"><a href="#">投資・マネー</a></li>
+				<li class="navTab no3"><a href="#">ライフスタイル</a></li>
+				<li class="navTab no4"><a href="#">エンタメ</a></li>
+				<li class="navTab no5"><a href="#">Woman</a></li>
+				<li><a href="#">ライター</a></li>
+			</ul><!--/.inner-->
+		</div>
+		
+		<div class="navMenus">
+			<div class="navMenu no1"><!--ビジネス-->
+				<ul>
+					<li>
+						<dl>
+							<dt>経営</dt>
+							<dd>
+								<div>
+									<p><a href="#">会社経営</a></p>
+									<p><a href="#">事務所経営</a></p>
+									<p><a href="#">病院経営</a></p>
+									<p><a href="#">B/S、P/L</a></p>
+								</div>
+								<div>
+									<p><a href="#">人事・組織</a></p>
+									<p><a href="#">マーケティング</a></p>
+									<p><a href="#">成長戦略</a></p>
+									<p><a href="#">資金調達</a></p>
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>税務会計</dt>
+							<dd>
+								<p><a href="#">個人所得税</a></p>
+								<p><a href="#">法人税</a></p>
+								<p><a href="#">会計</a></p>
+								<p><a href="#">監査</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>起業</dt>
+							<dd>
+								<p><a href="#">スタートアップ</a></p>
+								<p><a href="#">アントレプレナー</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>転職</dt>
+							<dt>セミナー・イベント</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no2"><!--投資・マネー-->
+				<ul>
+					<li>
+						<dl>
+							<dt>株式</dt>
+							<dt>債権</dt>
+							<dt>投資信託</dt>
+							<dt>クラウドファンディング</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>不動産</dt>
+							<dd>
+								<p><a href="#">国内</a></p>
+								<p><a href="#">海外</a></p>
+								<p><a href="#">パリ</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>新しい投資</dt>
+							<dd>
+								<p><a href="#">再生可能エネルギー</a></p>
+								<p><a href="#">その他事業投資</a></p>
+								<p><a href="#">動産リース型投資（当社独自商品）</a></p>
+								<p><a href="#">暗号通貨</a></p>
+								<p><a href="#">その他</a></p>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no3"><!--ライフスタイル-->
+				<ul>
+					<li>
+						<dl>
+							<dt>マイライフ</dt>
+							<dd>
+								<p><a href="#">健康</a></p>
+								<p><a href="#">アンチエイジング</a></p>
+								<p><a href="#">ダイエット</a></p>
+								<p><a href="#">体づくり</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>教育</dt>
+							<dd>
+								<p><a href="#">資格</a></p>
+								<p><a href="#">MBA</a></p>
+								<p><a href="#">外国語</a></p>
+								<p><a href="#">短期留学</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>趣味・嗜好</dt>
+							<dd>
+								<p><a href="#">車</a></p>
+								<p><a href="#">時計</a></p>
+								<p><a href="#">ファッション</a></p>
+								<p><a href="#">酒</a></p>
+								<p><a href="#">料理</a></p>
+								<p><a href="#">ビジネスグッズ</a></p>
+								<p><a href="#">ゴルフ</a></p>
+								<p><a href="#">アウトドア</a></p>
+								<p><a href="#">社会人サークル・イベント</a></p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ファミリー</dt>
+							<dd>
+								<p><a href="#">子供の教育</a></p>
+								<p><a href="#">住居</a></p>
+								<p><a href="#">家計</a></p>
+								<p><a href="#">結婚・離婚・パートナーとの生活</a></p>
+							</dd>
+							<dt>環境・オーガニック・ビオ</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no4"><!--エンタメ-->
+				<ul>
+					<li>
+						<dl>
+							<dt>グルメ</dt>
+							<dt>旅行</dt>
+							<dt>ホテル</dt>
+							<dt>演劇</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ミュージカル</dt>
+							<dt>クラブ</dt>
+							<dt>ジャズバー</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="navMenu no5"><!--Woman-->
+				<ul>
+					<li>
+						<dl>
+							<dt>キャリア・ビジネス</dt>
+							<dt>ビューティー</dt>
+							<dt>ファッション</dt>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>ヘルスケア</dt>
+							<dt>女性アンチエイジング</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div><!--/.navMenus-->
+	</nav>
+</header><!--/.header-->
+
+
+<div class="pankz">
+	<div class="inner">
+		<a href="#">ＴＯＰ</a>  /  <a href="#">ビジネス</a>  /  記事タイトルテキストテキスト
+	</div>
+</div>
+
+
+<div class="container bgGrey2 spBgN">
+	<div class="inner clearfix colWrap PT25 spPT0">
+		<div class="colMain">
+			<div class="indexBox">
+				<h2 class="ttl">INDEX</h2>
+				<div class="numberList1">
+					<dl>
+						<dt class="num"><span>01</span></dt>
+						<dd>
+							<a class="clkScrl" href="#index01">もくじ1 clickで該当箇所へスクロールする場合はclass="clkScrl"</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="num"><span>02</span></dt>
+						<dd>
+							<a href="#">もくじ2 目次は.indexBoxを使う</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="num"><span>03</span></dt>
+						<dd>
+							<a href="#">もくじ3</a>
+							<ul>
+								<li><a href="#">もくじ3_1 小目次はdd&gt;ul&gt;li&gt;aを使う</a></li>
+								<li><a href="#">もくじ3_2もくじ3_2もくじ3_2もくじ3_2もくじ3_2もくじ3_2もくじ3_2もくじ3_2もくじ3_2もくじ3_2</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="num"><span>04</span></dt>
+						<dd>
+							<a href="#">もくじ4</a>
+							<ul>
+								<li><a href="#">もくじ4_1</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="num"><span>05</span></dt>
+						<dd>
+							<a href="#">もくじ5</a>
+							<ul>
+								<li><a href="#">もくじ5_1</a></li>
+								<li><a href="#">もくじ5_2</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="num"><span>06</span></dt>
+						<dd>
+							<a href="#">もくじ6</a>
+							<ul>
+								<li><a href="#">もくじ6_1</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="num"><span>07</span></dt>
+						<dd>
+							<a href="#">もくじ7</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="articleBox">
+				<div class="img"><img src="common/img/img2.png" width="100%" alt=""></div>
+				<div class="in">
+					<h1 class="articleTtl">記事のメインタイトルが入る クラスは.articleTtl</h1>
+					<div class="articleInfo">
+						<ul class="snsBox">
+							<li><!--facebook-->
+								<div class="fb-share-button" data-href="http://fani.wadakoubou.com/lenovi/article.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ffani.wadakoubou.com%2Flenovi%2Farticle.html&amp;src=sdkpreparse">シェア</a></div></li>
+							<li><!--twitter-->
+								<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+							<li><!--hatenabook-->
+								<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" data-hatena-bookmark-width="60" data-hatena-bookmark-height="20" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+						</ul>
+						<time>OCT 17 2017</time>
+					</div>
+
+					<p>本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ本文はただのpタグ</p>
+					<div class="wakuTxt1">枠がある場合はクラス.wakuTxt1を付ける枠がある場合はクラス.wakuTxt1を付ける枠がある場合はクラス.wakuTxt1を付ける枠がある場合はクラス.wakuTxt1を付ける枠がある場合はクラス.wakuTxt1を付ける</div>
+
+					<h2 class="ttl1">h2見出しが入る クラスは .ttl1</h2>
+					<p>究極に理想的なクルマ社会の実現を目指し、メルセデス・ベンツが中長期戦略に掲げる「CASE」。その取り組みの現在、過去、そして未来像を紹介する。2016年9月に行われた「パリモーターショー2016」で、メルセデス・ベンツは、パワートレインの変革を掲げた「EQ」と同時に、「CASE（ケース）」と名づけた中長</p>
+
+<a id="index01" name="index01"></a>
+					<h3 class="ttl2">h3見出しが入る クラスは .ttl2</h3>
+					<div class="imgTxt clearfix">
+						<div class="img fltR"><img src="common/img/img3.png" alt=""></div>
+						<p>写真を左右に振る時は.imgTxt.clearfixの中に.img.fltRとpタグを入れる。写真を左にする時は.img.fltRを.img.fltLにする。写真を左右に振る時は.imgTxt.clearfixの中に.img.fltRとpタグを入れる。写真を左にする時は.img.fltRを.img.fltLにする。写真を左右に振る時は.imgTxt.clearfixの中に.img.fltRとpタグを入れる。写真を左にする時は.img.fltRを.img.fltLにする。</p>
+					</div>
+
+					<h4 class="ttl3">h4見出しが入る クラスは .ttl3</h4>
+					<blockquote class="inyo1">引用の場合はクラス.inyo1を付ける引用の場合はクラス.inyo1を付ける引用の場合はクラス.inyo1を付ける引用の場合はクラス.inyo1を付ける引用の場合はクラス.inyo1を付ける</blockquote>
+
+					<div class="onlyMember">
+						<p>会員にならないと見れないテキストは.onlyMemberの中にpタグを入れる会員にならないと見れないテキストは.onlyMemberの中にpタグを入れる会員にならないと見れないテキストは.onlyMemberの中にpタグを入れる会員にならないと見れないテキストは.onlyMemberの中にpタグを入れる</p>
+					</div>
+
+					<div class="logBox">
+						<p>この記事は会員限定です。<br class="spDevice">無料会員登録すると続きをお読みいただけます。</p>
+						<ul class="btns cols2">
+							<li><a class="btn type1 spSizeL clr3" href="#">カンタン1分登録</a></li>
+							<li><a class="btn type1 spSizeL clr2" href="#">ログイン</a></li>
+						</ul>
+					</div>
+
+					<div class="contributBox">
+						<p class="ttl"><i class="icn-comment"></i>コメントを投稿</p>
+						<div><textarea name="" id="" placeholder="コメントを入力してください"></textarea></div>
+						<div class="btnBox"><a class="btn type2 clr4" href="#">コメントする</a></div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.colMain-->
+
+		<div class="colSub spMT0">
+			<section class="pcBrows">
+				<div class="bnBox1">
+					<a href="#"><img src="https://placehold.jp/8b8b8b/ffffff/300x250.png" width="100%" alt="広告枠"></a>
+				</div>
+			</section>
+
+
+			<section class="MT45 spMT0">
+				<h2 class="ttl4 spInner">ここは.ttl4.spInner</h2>
+				<ul class="thumTxtList1">
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">ここは.thumTxtList1の.liItem要素の中身</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+
+			<section class="MT45 spMT0">
+				<h2 class="ttl4 spInner">新着コラム</h2>
+				<ul class="thumTxtList1">
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+					<li class="liItem">
+						<a href="#">
+							<span class="img"><img src="common/img/thum2.png" width="100%" alt=""></span>
+							<span class="txt">Googleはどのようにして重複コンテンツの排除を行っているのか？</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+
+			<section class="MT45 pcBrows">
+				<div class="bnBox1">
+					<a href="#"><img src="https://placehold.jp/8b8b8b/ffffff/300x250.png" width="100%" alt="広告枠"></a>
+				</div>
+			</section>
+		</div><!--/.colSub-->
+	</div><!--/.inner.colWrap-->
+	
+	
+	<div class="thumTxtList2 cols3 spBTGrey1">
+		<div class="inner">
+			<h2 class="ttl1 type2"><span>.ttl1.type2にspanを付ける</span></h2>
+			<ul>
+				<li>
+					<a href="#">
+						<div class="img"><img src="common/img/img4.png" width="100%" alt=""></div>
+						<p>.thumTxtList2の中のli要素.thumTxtList2の中のli要素</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="common/img/img4.png" width="100%" alt=""></div>
+						<p>記事タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="common/img/img4.png" width="100%" alt=""></div>
+						<p>記事タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="common/img/img4.png" width="100%" alt=""></div>
+						<p>記事タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="common/img/img4.png" width="100%" alt=""></div>
+						<p>記事タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="common/img/img4.png" width="100%" alt=""></div>
+						<p>記事タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+					</a>
+				</li>
+			</ul>
+			<div><a class="btn type3 clr5" href="#">このジャンルの記事一覧へ</a></div>
+		</div>
+	</div>
+</div><!--/.container-->
+
+
+<footer class="footer">
+	<nav class="ftNav">
+		<div class="ftLogo">
+			<div class="img"><img src="common/img/ft_logo.png" alt=""></div>
+			<p>「新しいコトを始めたい」人が集まる<br>エグゼクティブ向けプラットホーム</p>
+		</div>
+		<div class="ftMenus">
+			<dl>
+				<dt>ビジネス</dt>
+				<dd>
+					<p><a href="#">・経営</a></p>
+					<p><a href="#">・転職</a></p>
+					<p><a href="#">・起業</a></p>
+					<p><a href="#">・セミナー・イベント</a></p>
+					<p><a href="#">・税務会計</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>投資・マネー</dt>
+				<dd>
+					<p><a href="#">・株式</a></p>
+					<p><a href="#">・債権</a></p>
+					<p><a href="#">・投資信託</a></p>
+					<p><a href="#">・不動産</a></p>
+					<p><a href="#">・新しい投資</a></p>
+					<p><a href="#">・クラウドファンディング</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>ライフスタイル</dt>
+				<dd>
+					<p><a href="#">・マイライフ</a></p>
+					<p><a href="#">・教育</a></p>
+					<p><a href="#">・環境・オーガニック・ビオ</a></p>
+					<p><a href="#">・趣味・嗜好</a></p>
+					<p><a href="#">・ファミリー</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>エンタメ</dt>
+				<dd>
+					<p><a href="#">・グルメ</a></p>
+					<p><a href="#">・旅行</a></p>
+					<p><a href="#">・ホテル</a></p>
+					<p><a href="#">・演劇</a></p>
+					<p><a href="#">・ミュージカル</a></p>
+					<p><a href="#">・クラブ</a></p>
+					<p><a href="#">・ジャズバー</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>Woman</dt>
+				<dd>
+					<p><a href="#">・キャリア・ビジネス</a></p>
+					<p><a href="#">・ビューティー</a></p>
+					<p><a href="#">・ファッション</a></p>
+					<p><a href="#">・ヘルスケア</a></p>
+					<p><a href="#">・女性アンチエイジング</a></p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>ライター</dt>
+			</dl>
+		</div>
+	</nav>
+	<p class="copyright">Copyright© LEVINO. ALL RIGHTS RESERVED</p>
+</footer><!--/.footer-->
+</div><!--/.wrapper-->
+</body>
+</html>
